@@ -56,6 +56,107 @@ video {
   text-align: center;
 }
 
-// ---------------------------------------------
-// Votre code ici :
-// ---------------------------------------------
+.wrapper-hover .item:hover {
+  background-color: #f72585;
+}
+
+.wrapper-transition .item {
+  transition-duration: 0.5s;
+}
+
+.wrapper-transition .item:hover {
+  background-color: #f72585;
+}
+
+.wrapper-delay .item {
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.wrapper-delay .item:hover {
+  background-color: #f72585;
+}
+
+.wrapper-two-properties .item {
+  transition-duration: 0.5s;
+}
+
+.wrapper-two-properties .item:hover {
+  background-color: #f72585;
+  color: #000;
+}
+
+.wrapper-delay-one-property .item {
+  transition: background 0.5s, color 0.5s 0.5s;
+}
+
+.wrapper-delay-one-property .item:hover {
+  background-color: #f72585;
+  color: #000;
+}
+
+.wrapper-parent:hover .item {
+  background-color: #f72585;
+}
+
+.wrapper-parent-delay .item:nth-child(1) {
+  transition: 0.5s;
+}
+.wrapper-parent-delay .item:nth-child(2) {
+  transition: 0.5s 0.5s;
+}
+
+.wrapper-parent-delay .item:nth-child(3) {
+  transition: 0.5s 1s;
+}
+
+.wrapper-parent-delay:hover .item {
+  background-color: #f72585;
+}
+
+.wrapper-parent-children:hover .item {
+  background-color: #f72585;
+}
+
+.wrapper-parent-children:hover {
+  background-color: #4361ee;
+}
+
+.wrapper-parent-children-delay {
+  transition: 1s;
+}
+.wrapper-parent-children-delay .item {
+  transition: 0.5s 1s;
+}
+
+.wrapper-parent-children-delay:hover {
+  background-color: #4361ee;
+}
+
+.wrapper-parent-children-delay:hover .item {
+  background-color: #f72585;
+}
+
+.wrapper-translate .item {
+  transition: transform 0.2s;
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(20px);
+}
+
+.wrapper-rotate .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+
+.wrapper-scale .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-scale .item:hover {
+  transform: scale(1.2);
+}
